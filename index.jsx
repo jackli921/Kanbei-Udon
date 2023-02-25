@@ -18,19 +18,19 @@ function App() {
         
         
           <Link to="/menu">
-            <img src="/images/menu.svg" alt="icon of a menu" />
+            <img src="./images/menu.svg" alt="icon of a menu" />
             <span>Menu</span>
           </Link>
         
         
           <Link to="/about">
-            <img src="/images/about.svg" alt="icon of an info icon" />
+            <img src="./images/about.svg" alt="icon of an info icon" />
             <span>About</span>
           </Link>
         
         
           <Link to="/access">
-            <img src="/images/access.svg" alt="icon of a location pin" />
+            <img src="./images/access.svg" alt="icon of a location pin" />
             <span>Access</span>
           </Link>
         
