@@ -11,22 +11,22 @@ function App() {
     <BrowserRouter>
       <nav>
         <Link to="/">
-          <img src="./public/images/home.svg" alt="icon of a home" />
+          <img src="/public/images/home.svg" alt="icon of a home" />
           <span>Home</span>
         </Link>
 
         <Link to="/menu">
-          <img src="./public/images/menu.svg" alt="icon of a menu" />
+          <img src="/public/images/menu.svg" alt="icon of a menu" />
           <span>Menu</span>
         </Link>
 
         <Link to="/about">
-          <img src="./public/images/about.svg" alt="icon of an info icon" />
+          <img src="/public/images/about.svg" alt="icon of an info icon" />
           <span>About</span>
         </Link>
 
         <Link to="/access">
-          <img src="./public/images/access.svg" alt="icon of a location pin" />
+          <img src="/public/images/access.svg" alt="icon of a location pin" />
           <span>Access</span>
         </Link>
       </nav>
