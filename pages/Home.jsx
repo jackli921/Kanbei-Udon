@@ -12,15 +12,15 @@ export default function Home() {
         </p>
         <div className="landing-page-images-grid">
           <img
-            src="/public/images/home/home-1.png"
+            src="/images/home/home-1.png"
             alt="Japanese noren with kanbei written in Japanese kanji"
           />
           <img
-            src="/public/images/home/home-2.png"
+            src="/images/home/home-2.png"
             alt="protrait shot of the shop owner smiling"
           />
           <img
-            src="/public/images/home/home-3.png"
+            src="/images/home/home-3.png"
             alt="a set meal with black and white udon, shrimp tempura"
           />
         </div>
