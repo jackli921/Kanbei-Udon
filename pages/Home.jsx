@@ -1,25 +1,36 @@
-
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import Homedata from './Home-data'
+import {specialtyData, popularDishData} from "./homeData";
+
 
 export default function Home() {
 
-    const specialityHTML = Homedata.map((item, index) => {
-        const {title, description, url} = item
-        return (
-          <div key={index} className="specialty-card">
-            <img src={`${url}`} alt="" />
-            <div>
-              <h3>{title}</h3>
-              <p>{description}</p>
-            </div>
-          </div>
-        );
-    })
+  const specialityHTML = specialtyData.map((item, index) => {
+    const { title, description, url } = item;
+    return (
+      <div key={index} className="specialty-card">
+        <img src={`${url}`} alt="" />
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </div>
+    );
+  });
+
+  const popularDishHTML = popularDishData.map((item,index) => {
+    const {url, name} = item;
+    return (
+      <div key={index} className="popular-dish-card">
+          <img src={`${url}`} alt="" />
+          <h3>{name}</h3>
+      </div>
+    )
+  })  
+
 
   return (
-    <main>
+    <main className="main">
       <section className="landing-page-section">
         <h1 className="shop-name">Kanbei Udon</h1>
         <p className="tagline-primary upper">
@@ -41,7 +52,7 @@ export default function Home() {
         </div>
 
         <p className="tagline-primary">
-          Serving hearty meal to the community since 1977
+          Serving hearty meal to the Kasuya community since Showa 52 (1977)
         </p>
 
         <Link to="/about" className="button-primary">
@@ -52,10 +63,19 @@ export default function Home() {
       <section className="specialty-section">
         <h1>Our Specialty</h1>
         {specialityHTML}
-        <h4 className='tagline-secondary'>
+        <h4 className="tagline-secondary">
           The dashi stock we use are made from scratch each morning without any
           chemical additives.
         </h4>
+      </section>
+
+      <section className="popular-dish-section">
+        <h1>Popular Selections</h1>
+        <div className="popular-dish-grid">{popularDishHTML}</div>
+
+        <Link to="/menu" className="button-primary">
+          <span>Menu</span>
+        </Link>
       </section>
     </main>
   );

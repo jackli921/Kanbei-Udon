@@ -1,5 +1,5 @@
 
-const Homedata = [
+const specialtyData = [
   {
     title: "#1 Quality Noodles",
     description:
@@ -21,5 +21,31 @@ const Homedata = [
 ];
 
 
+const popularDishData = [
+  {
+    url: "/images/home/popular-1.png",
+    name: "Black Curry Udon",
+  },
+  {
+    url: "/images/home/popular-2.png",
+    name: "Mixed Udon Set",
+  },
+  {
+    url: "/images/home/popular-3.png",
+    name: "Mega Udon",
+  },
+  {
+    url: "/images/home/popular-4.png",
+    name: "Tempura Soba Set",
+  },
+  {
+    url: "/images/home/popular-5.png",
+    name: "Godzilla Bowl",
+  },
+  {
+    url: "/images/home/popular-6.png",
+    name: "Udon Katsudon Set",
+  },
+]
 
-export default Homedata;
+export { specialtyData, popularDishData };
