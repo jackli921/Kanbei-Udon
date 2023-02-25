@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <nav>
         <Link to="/">
-          <img src="/public/images/home.svg" alt="icon of a home" />
+          <img src="./public/images/home.svg" alt="icon of a home" />
           <span>Home</span>
         </Link>
 
