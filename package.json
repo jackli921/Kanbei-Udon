@@ -12,7 +12,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build && cp -R /public/images build/",
+    "build": "vite build && cp -R public build/",
     "preview": "vite preview"
   }
 }
