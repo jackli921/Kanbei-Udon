@@ -11,9 +11,9 @@ export default function Home() {
           A beloved udon shop along the streets of Kasuya, Fukuoka
         </p>
         <div className="landing-page-images-grid">
-          <img src="../images/home/home-1.png" alt="Japanese noren with kanbei written in Japanese kanji" />
-          <img src="../images/home/home-2.png" alt="protrait shot of the shop owner smiling" />
-          <img src="../images/home/home-3.png" alt="a set meal with black and white udon, shrimp tempura" />
+          <img src="/images/home/home-1.png" alt="Japanese noren with kanbei written in Japanese kanji" />
+          <img src="/images/home/home-2.png" alt="protrait shot of the shop owner smiling" />
+          <img src="/images/home/home-3.png" alt="a set meal with black and white udon, shrimp tempura" />
         </div>
 
         <p className="tagline-primary">
