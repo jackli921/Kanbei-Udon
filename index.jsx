@@ -12,7 +12,7 @@ function App() {
       <nav>
         
           <Link to="/">
-            <img src="./src/assets/images/home.svg" alt="icon of a home" />
+            <img src="./images/home.svg" alt="icon of a home" />
             <span>Home</span>
           </Link>
         
