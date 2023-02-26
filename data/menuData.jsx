@@ -53,7 +53,6 @@ const popularSelectionData = [
   },
 ];
 
-export {popularSelectionData}
 
 const singleItemData = [
   {
@@ -164,3 +163,11 @@ const sideMenuData = [
     url: "/images/menu/side-4.png",
   },
 ];
+
+export {
+  popularSelectionData,
+  singleItemData,
+  setMealData,
+  specialMenuData,
+  sideMenuData,
+};

@@ -8,6 +8,12 @@ import Access from "./pages/Access";
 import ItemDetails from "./pages/ItemDetails";
 
 import Layout from './components/Layout'
+import MenuLayout from './components/MenuLayout'
+
+import Set from './pages/Menu/Set'
+import Special from './pages/Menu/Special'
+import Single from './pages/Menu/Single'
+import Side from './pages/Menu/Side'
 
 function App() {
 
@@ -33,7 +39,14 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
+
+          <Route path="/menu" element={<MenuLayout />}>
+            <Route path="/menu/set" element={<Set />} />
+            <Route path="/menu/special" element={<Special />} />
+            <Route path="/menu/single" element={<Single />} />
+            <Route path="/menu/side" element={<Side />} />
+          </Route>
+
           <Route path="/about" element={<About />} />
           <Route path="/access" element={<Access />} />
           <Route path="/menu/:id" element={<ItemDetails />} />
