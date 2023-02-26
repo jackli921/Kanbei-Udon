@@ -190,3 +190,36 @@ section{
 .popular-dish-card > h3 {
     margin: 0.5rem auto;
 }
+
+.item-detail-container{
+    width: 90%;
+    margin: 1em auto;
+}
+
+.name-price-container{
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-name{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.item-price{
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.item-ingredient{
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.item-description{
+    text-align: left;
+    line-height: 1.5;
+}

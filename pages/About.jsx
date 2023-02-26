@@ -3,5 +3,9 @@ import { Link } from "react-router-dom";
 
 
 export default function About() {
-  return <h1>About Kanbei Udon</h1>;
+  return (
+    <main className="main">
+      <h1> More about Kanbei Udon!</h1>
+    </main>
+  );
 }

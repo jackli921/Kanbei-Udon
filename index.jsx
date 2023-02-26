@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
 import Access from "./pages/Access";
-
+import ItemDetails from "./pages/ItemDetails";
 
 
 function App() {
@@ -61,6 +61,8 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/access" element={<Access />} />
+        <Route path="/menu/:id" element={<ItemDetails />} />
+
       </Routes>
     </BrowserRouter>
   );

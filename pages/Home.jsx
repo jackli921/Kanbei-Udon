@@ -21,11 +21,13 @@ export default function Home() {
   const popularDishHTML = popularDishData.map((item,index) => {
     const {url, name} = item;
     return (
-      <div key={index} className="popular-dish-card">
+      <Link key={index} to={`/menu/${index}`}>
+        <div className="popular-dish-card">
           <img src={`${url}`} alt="" />
           <h3>{name}</h3>
-      </div>
-    )
+        </div>
+      </Link>
+    );
   })  
 
 
