@@ -13,20 +13,28 @@ export default function ItemDetails(){
 
     return (
       <main className="main">
-        <section className="item-detail-container">
-          <img src={`${item.url}`} alt="" />
+        {item ? (
+          <section className="item-detail-container">
+            <img src={`${item.url}`} alt="" />
 
-          <div className="item-detail-text-container">
-            <div className="name-price-container">
-              <span className="item-name">{item.name}</span>
-              <span className="item-price">¥{item.price}</span>
+            <div className="item-detail-text-container">
+              <div className="name-price-container">
+                <span className="item-name">{item.name}</span>
+                <span className="item-price">¥{item.price}</span>
+              </div>
+              <p className="item-ingredient">
+                Ingredients: <i>{item.ingredients}</i>
+              </p>
+              <p className="item-description">{item.description}</p>
             </div>
-            <p className="item-ingredient">
-              Ingredients: <i>{item.ingredients}</i>
-            </p>
-            <p className="item-description">{item.description}</p>
-          </div>
-        </section>
+
+            <Link to="/menu" className="button-primary">
+              <span>Back to Main Menu</span>
+            </Link>
+          </section>
+        ) : (
+          <h2>Loading </h2>
+        )}
       </main>
     );
 }
