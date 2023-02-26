@@ -35,7 +35,7 @@ function App() {
       <nav className="nav" id="nav">
         <Link to="/">
           <div>
-            <img src="/public/home.svg" alt="icon of a home" />
+            <img src="/src/assets/home.svg" alt="icon of a home" />
             <span>Home</span>
           </div>
         </Link>
