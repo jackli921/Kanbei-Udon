@@ -227,3 +227,19 @@ section{
     text-align: left;
     line-height: 1.5;
 }
+
+.menu-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 1em;
+}
+
+.menu-nav a {
+    padding: 0.6em 2rem;
+    min-width: 130px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1.3;   
+}
