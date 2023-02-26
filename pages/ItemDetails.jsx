@@ -3,13 +3,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { useParams } from 'react-router-dom';
-import { menuData } from "./menuData";
+import { popularSelectionData } from "../data/menuData";
 
 export default function ItemDetails(){
     const param = useParams()
     const itemIndex = Number(param.id)
 
-    const item = (menuData[itemIndex])
+    const item = (popularSelectionData[itemIndex])
 
     return (
       <main className="main">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {specialtyData, popularDishData} from "./homeData";
+import {specialtyData, popularDishData} from "../data/homeData";
 
 
 export default function Home() {
