@@ -1,22 +1,38 @@
-# cQ6bL8AM
 
-Warning: Vite enforces using jsx syntax inside jsx/tsx files, so it will complain about that. Solution: rename `.js` files to `.jsx` :)
+<div align="center">
+ <img src="/images/icon.png" width="300px">
+</div>
 
-## Dependencies
-- React
-- React dom
-- React router
+## Tindog
+A responsive website for a real udon shop in Fukuoka, Japan built using React Router 6
+
+
+## Overview 
+The purpose of this website is to
+1. create a robust online prescence for Kanbei Udon shop
+2. provide easy access to potential vistors with information on the offerings and specialties
+3. document the story of Kanbei Udon   
+
+
+## Features
+1. Home - landing page to all other page, routes to all other pages
+2. Menu - a dashboard of various categories that links to nested routes providing additional details  
+3. About - a storyline and timeline of the store's history 
+4. Access - google maps plug-in and business hours
 
 ## Technologies
-- React.js
 - JavaScript ES6
 - HTML5
 - CSS3
 
+## Dependencies
+- React
+- React Dom
+- React Router
+
+
 ## Demo
-<div  align="center">
-<img src="./vite-project/images/demo.gif" height=600px>
+<div align="center">
+ <img src="/images/demo.png" height="600px">
 </div>
-
  
-
