@@ -3,7 +3,7 @@
  <img src="/images/icon.png" width="300px">
 </div>
 
-## Tindog
+## Kanbei Udon 
 A responsive website for a real udon shop in Fukuoka, Japan built using React Router 6
 
 
