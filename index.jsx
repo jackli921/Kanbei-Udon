@@ -7,11 +7,9 @@ import Menu from "./pages/Menu";
 import Access from "./pages/Access";
 import ItemDetails from "./pages/ItemDetails";
 
+import Layout from './components/Layout'
 
 function App() {
-
-
-
 
   function fixNav(){
     const nav = document.querySelector(".nav");
@@ -32,37 +30,14 @@ function App() {
 
   return (
     <BrowserRouter>
-      <nav className="nav" id="nav">
-        <Link to="/">
-          <div>
-            <img src="/images/home.svg" alt="icon of a home" />
-            <span>Home</span>
-          </div>
-        </Link>
-
-        <Link to="/menu">
-          <img src="/images/menu.svg" alt="icon of a menu" />
-          <span>Menu</span>
-        </Link>
-
-        <Link to="/about">
-          <img src="/images/about.svg" alt="icon of an info icon" />
-          <span>About</span>
-        </Link>
-
-        <Link to="/access">
-          <img src="/images/access.svg" alt="icon of a location pin" />
-          <span>Access</span>
-        </Link>
-      </nav>
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/access" element={<Access />} />
-        <Route path="/menu/:id" element={<ItemDetails />} />
-
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/access" element={<Access />} />
+          <Route path="/menu/:id" element={<ItemDetails />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
