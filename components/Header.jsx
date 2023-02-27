@@ -1,32 +1,32 @@
 import React, { PureComponent } from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 export default function Header(){
     return (
       <header>
         <nav className="top-nav" id="top-nav">
-          <Link to="/">
+          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/">
             <img src="/images/home.svg" alt="icon of a home" />
             <span>Home</span>
-          </Link>
+          </NavLink>
 
-          <Link to="/menu">
+          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/menu">
             <img src="/images/menu.svg" alt="icon of a menu" />
             <span>Menu</span>
-          </Link>
+          </NavLink>
 
-          <Link to="/about">
+          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/about">
             <img src="/images/about.svg" alt="icon of an info icon" />
             <span>About</span>
-          </Link>
+          </NavLink>
 
-          <Link to="/access">
+          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/access">
             <img src="/images/access.svg" alt="icon of a location pin" />
             <span>Access</span>
-          </Link>
+          </NavLink>
         </nav>
       </header>
-      
+
     );
 }
