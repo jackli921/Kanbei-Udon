@@ -14,6 +14,7 @@ import Set from './pages/Menu/Set'
 import Special from './pages/Menu/Special'
 import Single from './pages/Menu/Single'
 import Side from './pages/Menu/Side'
+import Notice from "./pages/Menu/Notice";
 
 function App() {
 
@@ -40,11 +41,13 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
 
-          <Route path="/menu" element={<MenuLayout />}>
-            <Route path="/menu/set" element={<Set />} />
-            <Route path="/menu/special" element={<Special />} />
-            <Route path="/menu/single" element={<Single />} />
-            <Route path="/menu/side" element={<Side />} />
+          <Route path="menu" element={<MenuLayout />}>
+
+            <Route index element={<Notice />} />
+            <Route path="set" element={<Set />} />
+            <Route path="special" element={<Special />} />
+            <Route path="single" element={<Single />} />
+            <Route path="side" element={<Side />} />
           </Route>
 
           <Route path="/about" element={<About />} />
