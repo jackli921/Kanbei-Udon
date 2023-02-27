@@ -5,12 +5,10 @@ import {Link} from 'react-router-dom'
 export default function Header(){
     return (
       <header>
-        <nav className="nav" id="nav">
+        <nav className="top-nav" id="top-nav">
           <Link to="/">
-            <div>
-              <img src="/images/home.svg" alt="icon of a home" />
-              <span>Home</span>
-            </div>
+            <img src="/images/home.svg" alt="icon of a home" />
+            <span>Home</span>
           </Link>
 
           <Link to="/menu">

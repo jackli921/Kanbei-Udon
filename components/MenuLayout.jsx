@@ -3,7 +3,7 @@ import {Link, Outlet} from 'react-router-dom'
 
 export default function MenuLayout() {
   return (
-      <main>
+      <main className="main">
         <nav className="menu-nav">
           <Link to="/menu/set">Teishoku Set</Link>
           <Link to="/menu/special">Special Items</Link>
@@ -12,6 +12,5 @@ export default function MenuLayout() {
         </nav>
         <Outlet />
       </main>
-    
   );
 }

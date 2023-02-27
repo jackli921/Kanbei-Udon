@@ -18,11 +18,11 @@ import Side from './pages/Menu/Side'
 function App() {
 
   function fixNav(){
-    const nav = document.querySelector(".nav");
+    const nav = document.getElementById("top-nav");
     const main = document.querySelector(".main");
     const topOfNav = nav.offsetTop;
 
-    if(window.scrollY > 1){
+    if(window.scrollY > 0){
       main.style.paddingTop = nav.topOfNav
       nav.classList.add('fixed-nav')
     }
