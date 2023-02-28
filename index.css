@@ -376,7 +376,7 @@ section p{
 
 .access-info-container{
     width: 90%;
-    margin: 1em auto;
+    margin: 0 auto 1em;
     text-align: left;
 }
 
@@ -400,4 +400,9 @@ section p{
 
 .red{
     color: red;
+}
+
+iframe{
+    max-width: 600px;
+    max-height: 600px;
 }
