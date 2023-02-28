@@ -3,9 +3,27 @@ import { Link } from "react-router-dom";
 import { specialMenuData } from "../../data/menuData";
 
 export default function Special() {
-  return (
-    <>
-      <h1>Special goes here</h1>
-    </>
-  );
+
+    const specialMenuEl = specialMenuData.map((item, index) => {
+      return (
+        <div key={index} className="item-detail-container">
+          <img src={`${item.url}`} alt="" />
+
+          <div className="item-detail-text-container">
+            <div className="name-price-container">
+              <span className="item-name">{item.name}</span>
+              <span className="item-price">¥{item.price}</span>
+            </div>
+            <p className="item-ingredient">
+              Ingredients: <i>{item.ingredients}</i>
+            </p>
+            
+          </div>
+        </div>
+      );
+    });
+
+
+
+  return <>{specialMenuEl}</>;
 }

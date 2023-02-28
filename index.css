@@ -214,7 +214,7 @@ section{
 
 .item-name{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .item-price{
@@ -239,7 +239,7 @@ section{
     grid-template-columns: 1fr 1fr;
     grid-template-columns: auto auto;
     gap: 1em;
-}
+} 
 
 .menu-nav a {
     padding: 0.5em 2rem;
@@ -268,7 +268,7 @@ section{
 }
 
 .active-link{
-    background-color: #fabd59;
+    background-color: #fabd59 !important;
 }
 
 
@@ -299,4 +299,21 @@ footer>p>span{
 }
 footer > a > img{
     width: 1em;   
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.scroll-to-top.show {
+    display: block;
+}
+
+
+ul > li {
+    padding: 0.5em 0 0 0;
+    text-align: left;
 }

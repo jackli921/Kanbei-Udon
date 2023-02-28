@@ -56,10 +56,10 @@ const popularSelectionData = [
 
 const singleItemData = [
   {
-    name: "Chonan Udon (chicken egg udon)",
-    ingredients: "540",
-    price:
+    name: "Chonan Udon",
+    ingredients:
       "Udon soup stock (dried bonito, dried bonito flakes, kelp, etc.), egg, Japanese chicken, green onion",
+    price: "540",
     url: "/images/menu/single-item-1.png",
   },
   {
@@ -70,7 +70,7 @@ const singleItemData = [
     url: "/images/menu/single-item-2.png",
   },
   {
-    name: "Katsu-don (Pork cutlet with egg)",
+    name: "Katsu-don (rice bowl)",
     ingredients:
       "Japanese pork shoulder loin, egg, onion, special rice bowl soup (soy sauce, sugar, etc.",
     price: "680",
@@ -96,9 +96,9 @@ const setMealData = [
   },
   {
     name: "Tenzaru Soba Set",
-    price:
+    price: "860",
+    ingredients:
       "Tempura includes eggplant, green bell pepper, pumpkin, onion and shrimp. Soba noodles are buckwheat and wheat flour",
-    ingredients: "860",
     url: "/images/menu/set-3.png",
   },
 ];
@@ -142,7 +142,7 @@ const sideMenuData = [
     url: "/images/menu/side-1.png",
   },
   {
-    name: "Shiitake mushroom rice ball(x2)",
+    name: "Shiitake rice ball(x2)",
     price: "260",
     ingredients: "burdock root, carrot, fried bean curd, chicken fat",
     description: "",
