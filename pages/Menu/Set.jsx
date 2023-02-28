@@ -49,14 +49,14 @@ export default function Set(){
             <i>Teishoku</i> means "set meal" or "combo"
             <br />
           </p>
-        <hr />
+          <hr />
           <h1>Teishoku Options</h1>
           <ul>
             <li>
-              <strong> Udon or Soba (Hot or Cold) </strong>
+              Choose <strong>Udon or Soba (Hot or Cold) </strong>
             </li>
             <li>
-              One rice bowl of your choice
+              Choose one rice bowl of your choice
               <ul>
                 <li>
                   <strong>Katsudon</strong> (Pork cutlet & egg)

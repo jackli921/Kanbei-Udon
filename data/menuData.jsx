@@ -84,7 +84,7 @@ const setMealData = [
     name: "Regular Udon Set",
     price: "750",
     ingredients:
-      "Tempura incldues eggplant, green bell pepper, and pumpkin. Shiitake mushroom rice, burdock root, carrot, fried bean curd and chicken fat",
+      "Tempura (eggplant, green bell pepper, and pumpkin), Shiitake mushroom rice, burdock root, carrot, fried bean curd, chicken fat",
     url: "/images/menu/set-1.png",
   },
   {
@@ -98,7 +98,7 @@ const setMealData = [
     name: "Tenzaru Soba Set",
     price: "860",
     ingredients:
-      "Tempura includes eggplant, green bell pepper, pumpkin, onion and shrimp. Soba noodles are buckwheat and wheat flour",
+      "Tempura (eggplant, green bell pepper, pumpkin, onion and shrimp), Soba noodles (buckwheat and wheat flour)",
     url: "/images/menu/set-3.png",
   },
 ];
