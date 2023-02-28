@@ -62,8 +62,8 @@ a {
 }
 
 a > span{
-    font-size: 1.2rem;
-    margin:0.2rem 0 0 0
+    font-size: 1.2em;
+    margin:0.2em 0 0 0
 }
 
 main{
@@ -71,7 +71,7 @@ main{
 }
 
 img{
-    max-width: 500px;
+
     border-radius: 15px;
 }
 
@@ -79,12 +79,13 @@ section{
     margin-bottom: 3rem;
 }
 
+
 .landing-page-images-grid{
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
-    gap: 0.5rem;
+    gap: 0.5em;
 }
 
 .landing-page-images-grid img{
@@ -114,12 +115,13 @@ section{
 
 .shop-name{
     font-family: 'Cintaly', sans-serif;
-    font-size: 3.9em;
+    font-size: 3.6em;
     margin: 1rem 0 0 0;
 }
 
 .tagline-primary{
     width: 95%;
+    max-width: 680px;
     text-align:center;
     font-size: 1.2em;
     margin: 1rem auto;
@@ -128,8 +130,9 @@ section{
 
 .tagline-secondary{
     line-height: 1.5;
-    max-width: 400px;
+    max-width: 680px;
     margin: 0 auto 2em;
+    text-align: center;
 }
 
 .upper{
@@ -139,7 +142,7 @@ section{
 .button-primary{
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 680px;
     background-color: #fabd59;
     font-weight: 600;
     padding: 1em;
@@ -157,9 +160,9 @@ p > i{
     display:flex;
     align-items: flex-start;
     justify-content: center;
-    gap:1rem;
+    gap:1em;
     text-align: left;
-    margin-bottom: 1rem;
+    margin: 1em auto;
     line-height: 1.4;
 }
 
@@ -185,19 +188,20 @@ p > i{
 .popular-dish-grid {
     display: grid;
     max-width: 1000px;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0.5em
+    grid-template-columns: repeat(1, minmax(170px, 1fr));
+    margin: 0 auto;
 }
 
 .popular-dish-card> img {
     width: 100%;
     height: 80%;
     object-fit: cover;
+    max-width: 400px;
 }
 
 .popular-dish-card > h3 {
-    margin: 0.5rem auto;
+    margin: 0.5em auto;
+    font-size: 1.5em;
 }
 
 .item-detail-container{
@@ -211,9 +215,14 @@ p > i{
 
 .name-price-container{
     margin: 0.5rem auto;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.name-price-container h3{
+    margin-top:0px;
+    font-size: 1.2em;
 }
 
 .item-name{
@@ -238,20 +247,25 @@ p > i{
 }
 
 .menu-nav{
-    margin: 1em 0;
+    margin: 1em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    justify-items: center;
+    max-width: 1000px;
     gap: 1em;
 } 
 
 .menu-nav a {
-    padding: 0.5em 2rem;
+    padding: 0.5em;
+    width: 100%;
+    height: 3em;
     min-width: 130px;
-    min-height: 60px;
+    min-height: 80px;
+    max-width: 350px;
+    max-height: 120px;
     background-color: #a6a6a6;
     border-radius: 10px;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     letter-spacing: 1.3;  
     display: flex;
     justify-content: center;
@@ -310,8 +324,8 @@ footer > a > img{
     bottom: 20px;
     right: 20px;
     display: none;
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     border: none;
     background-color: #fabd59;
     border-radius: 50%;
@@ -405,4 +419,112 @@ section p{
 iframe{
     max-width: 600px;
     max-height: 600px;
+}
+
+.notice-topping-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notice-topping-container li{
+    text-align: left;
+}
+
+.notice-image{
+    width: 100%;
+    max-width: 500px;
+}
+
+@media( max-width:599px){
+    #root{
+        font-size: 16px;
+    }
+}
+
+
+@media(min-width:600px){
+    #root{
+        font-size: 18px;
+    }
+
+    .landing-page-images-grid{
+        gap: 1em;
+    }
+
+    .button-primary{
+        font-size: 1.2em;
+    }
+
+    .specialty-card>div>h3 {
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+    }
+    .specialty-card>div>p {
+        font-size: 1.2em;
+        max-width: 90%;
+        min-width: 200px;
+    }
+
+    .tagline-secondary {
+        font-size: 1.2em;
+    }
+
+    .popular-dish-grid {
+        grid-template-columns: repeat(2, minmax(170px, 1fr));
+        gap: 1em;
+    }
+
+    .menu-nav a{
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width:760px){
+
+}
+
+
+@media(min-width:900px){
+    #root{
+        font-size: 20px;
+        }
+
+    .specialty-card{
+        justify-content: center;
+    }
+    .specialty-card > img{
+        max-width: 350px;
+    }
+
+    .specialty-card > div {
+        max-width: 350px;
+        margin: 0;
+    }
+
+    .name-price-container{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+
+
+}
+
+@media(min-width:1000px){
+
+    #root{
+        font-size: 20px;
+    }
+    .menu-nav{
+        display: flex;
+        margin: 1em auto;
+        max-width: 1200px;
+        justify-content: center;
+    }
+    .menu-nav a{
+        max-width: 250px;
+        padding: 2em 4em;
+    }
 }

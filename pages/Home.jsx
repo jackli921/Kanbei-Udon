@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {specialtyData, popularDishData} from "../data/homeData";
-
+import { popularSelectionData } from "../data/menuData";
 
 export default function Home() {
 
@@ -18,13 +18,16 @@ export default function Home() {
     );
   });
 
-  const popularDishHTML = popularDishData.map((item,index) => {
-    const {url, name} = item;
+  const popularDishHTML = popularSelectionData.map((item,index) => {
+    const {url, name, price} = item;
     return (
       <Link key={index} to={`/menu/${index}`}>
         <div className="popular-dish-card">
           <img src={`${url}`} alt="" />
-          <h3>{name}</h3>
+          <div className="name-price-container">
+            <h3>{name}</h3>
+            <h3>¥{price}</h3>
+          </div>
         </div>
       </Link>
     );
@@ -62,14 +65,18 @@ export default function Home() {
         </Link>
       </section>
 
+      <hr />
+
       <section className="specialty-section">
         <h1>Our Specialty</h1>
         {specialityHTML}
-        <h4 className="tagline-secondary">
-          The dashi stock we use are made from scratch each morning without any
-          chemical additives.
-        </h4>
+        <p className="tagline-secondary">
+          The dashi stock we use are made <strong>from scratch </strong>each
+          morning <strong>without any chemical additives</strong>.
+        </p>
       </section>
+      
+      <hr />
 
       <section className="popular-dish-section">
         <h1>Popular Selections</h1>

@@ -25,27 +25,33 @@ const popularDishData = [
   {
     url: "/images/home/popular-1.png",
     name: "Black Curry Udon",
+    price: "¥",
   },
   {
     url: "/images/home/popular-2.png",
     name: "Mixed Udon Set",
+    price: "",
   },
   {
     url: "/images/home/popular-3.png",
     name: "Mega Udon",
+    price: "",
   },
   {
     url: "/images/home/popular-4.png",
     name: "Tempura Soba Set",
+    price: "",
   },
   {
     url: "/images/home/popular-5.png",
     name: "Godzilla Bowl",
+    price: "",
   },
   {
     url: "/images/home/popular-6.png",
     name: "Udon Katsudon Set",
+    price: "",
   },
-]
+];
 
 export { specialtyData, popularDishData };
