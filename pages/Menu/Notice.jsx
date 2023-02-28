@@ -9,7 +9,7 @@ export default function Notice() {
   return (
     <>
       <img src="/images/menu/toppings.png" style = {toppingStyle}alt="" />
-      <h3>Upgrade your meal with the following options: </h3>
+      <h3>Upgrade your meal with the following: </h3>
       <ul>
         <li>
           Plus ¥110 for <strong>large noodle portion</strong>

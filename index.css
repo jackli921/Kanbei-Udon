@@ -72,6 +72,7 @@ main{
 
 img{
     max-width: 500px;
+    border-radius: 15px;
 }
 
 section{
@@ -244,7 +245,7 @@ section{
 .menu-nav a {
     padding: 0.5em 2rem;
     min-width: 130px;
-    min-height: 90px;
+    min-height: 60px;
     background-color: #a6a6a6;
     border-radius: 10px;
     font-size: 1.45rem;
@@ -362,4 +363,32 @@ section p{
 .timeline-section span{
     font-size: 1.3em;
     font-weight: 600;
+}
+
+.access-info-container{
+    width: 90%;
+    margin: 1em auto;
+    text-align: left;
+}
+
+.access-line-container{
+    display: flex;
+    gap: 1.5em;
+    width: 90%;
+    margin: 0 10%;
+    line-height: 1.4;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.access-line-container img{
+    width: 1.9em;
+}
+
+.access-line-container h4{
+    margin: 1em;
+}
+
+.red{
+    color: red;
 }
