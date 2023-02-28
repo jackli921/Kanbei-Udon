@@ -16,7 +16,6 @@ import Single from './pages/Menu/Single'
 import Side from './pages/Menu/Side'
 import Notice from "./pages/Menu/Notice";
 
-
 function App() {
 
   function fixNav(){
@@ -34,16 +33,12 @@ function App() {
     }
   }
 
-  window.addEventListener('scroll', fixNav)
+window.addEventListener('scroll', fixNav)
 
-function ScrollToTop() {
-  const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
+// scroll to top 
   const handleScroll = () => {
     const scrollButton = document.querySelector(".scroll-to-top");
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 200) {
       scrollButton.classList.add("show");
     } else {
       scrollButton.classList.remove("show");
@@ -51,13 +46,6 @@ function ScrollToTop() {
   };
 
   window.addEventListener("scroll", handleScroll);
-
-  return (
-    <button className="scroll-to-top" onClick={handleClick}>
-      <i className="fa fa-chevron-up"></i>
-    </button>
-  );
-}
 
 
   return (

@@ -2,6 +2,7 @@ import React from  'react'
 import {Outlet} from "react-router-dom"
 import Header from './Header'
 import Footer from './Footer'
+import ScrollToTop from './ScrollToTop'
 
 
 export default function Layout(){
@@ -12,6 +13,7 @@ export default function Layout(){
           <Outlet />
         </div>
         <Footer />
+        <ScrollToTop />
       </>
     );
 }
