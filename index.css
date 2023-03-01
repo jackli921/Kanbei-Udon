@@ -418,6 +418,7 @@ section p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
 }
 
 .access-line-container{
@@ -427,7 +428,7 @@ section p{
     line-height: 1.4;
     justify-content: flex-start;
     align-items: center;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .access-line-container img{
@@ -584,6 +585,9 @@ iframe{
         display: flex;
         justify-content: space-between;
         font-size: 1.2em;
+    }
+    .access-info-container{
+        margin: 1em auto;
     }
 
 
