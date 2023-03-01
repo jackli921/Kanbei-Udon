@@ -81,11 +81,12 @@ section{
 
 
 .landing-page-images-grid{
-    max-width: 1000px;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     gap: 0.5em;
+    margin:0 auto
 }
 
 .landing-page-images-grid img{
@@ -121,7 +122,6 @@ section{
 
 .tagline-primary{
     width: 95%;
-    max-width: 680px;
     text-align:center;
     font-size: 1.2em;
     margin: 1rem auto;
@@ -222,16 +222,25 @@ p > i{
     height: auto;
 
 }
-
+.item-detail-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 .item-detail-text-container{
     margin: 0 auto;
+}
+
+.item-detail-button-container{
+    display: flex;
+    gap:1em;
 }
 .name-price-container{
     margin: 0.5rem auto;
     display: flex;
     justify-content: space-between;
     font-size: 1.2em;
+    max-width: 400px;
 }
 
 .name-price-container h3{
@@ -481,9 +490,6 @@ iframe{
 
 
 @media(min-width:600px){
-    #root{
-        font-size: 18px;
-    }
 
     .landing-page-images-grid{
         gap: 1em;
@@ -531,6 +537,9 @@ iframe{
 }
 
 @media(min-width:700px){
+    #root {
+            font-size: 18px;
+        }
     .set-meal-card-container {
         grid-template-columns: repeat(2, minmax(170px, 1fr));
         gap:1em ;

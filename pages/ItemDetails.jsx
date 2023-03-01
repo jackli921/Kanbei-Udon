@@ -28,9 +28,14 @@ export default function ItemDetails(){
               <p className="item-description">{item.description}</p>
             </div>
 
-            <Link to="/menu" className="button-primary">
-              <span>Back to Main Menu</span>
-            </Link>
+            <div className='item-detail-button-container'>
+              <Link to="/" className="button-primary">
+                <span>Back to Home</span>
+              </Link>
+              <Link to="/menu" className="button-primary">
+                <span>Go to Menu</span>
+              </Link>
+            </div>
           </section>
         ) : (
           <h2>Loading </h2>
