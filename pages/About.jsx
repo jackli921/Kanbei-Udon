@@ -13,13 +13,16 @@ export default function About() {
           <img src="/images/about/about-1.png" alt="" />
         </div>
 
-        <h3>Mr.Ogawa & Kanbei Udon Shop</h3>
-        <p>
-          Born in the 50s, Mr.Ogawa grew up in a working class family where he
-          started working at an young age. One of his many job was at an udon
-          shop.{" "}
-        </p>
+        <article className="about-article-1">
+          <h3>Mr.Ogawa & Kanbei Udon Shop</h3>
+          <p>
+            Born in the 50s, Mr.Ogawa grew up in a working class family where he
+            started working at an young age. One of his job was at an udon shop.{" "}
+          </p>
+        </article>
       </section>
+
+      <hr />
 
       <section className="about-section">
         <img src="/images/about/about-3.png" alt="" />
@@ -31,6 +34,8 @@ export default function About() {
         </p>
       </section>
 
+      <hr />
+
       <section className="about-section">
         <img src="/images/about/about-4.png" alt="" />
         <h3>Mr.Ogawa & Rob</h3>
@@ -40,6 +45,8 @@ export default function About() {
           Kanbei ever since. Rob is now the udon master.
         </p>
       </section>
+
+      <hr />
 
       <section className="about-section">
         <img src="/images/about/about-5.png" alt="" />
@@ -51,7 +58,8 @@ export default function About() {
         </p>
       </section>
       <hr />
-      <br />
+
+
 
       <section className="about-section timeline-section">
         <h1>Kanbei Udon's Timeline</h1>
