@@ -609,3 +609,11 @@ iframe{
         padding: 2em 4em;
     }
 }
+
+
+@media(min-width:1200px){
+    .popular-dish-grid {
+            grid-template-columns: repeat(3, minmax(170px, 1fr));
+            gap: 1em;
+        }
+}
