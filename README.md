@@ -1,6 +1,6 @@
 
 <div align="center">
- <img src="/images/icon.png" width="300px">
+ <img src="/images/logo.png" width="300px">
 </div>
 
 ## Kanbei Udon 
@@ -39,6 +39,6 @@ To run the project locally:
 
 ## Demo
 <div align="center">
- <img src="/images/demo.png" height="600px">
+ <img src="/images/demo.gif" height="600px">
 </div>
  
