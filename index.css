@@ -204,35 +204,46 @@ p > i{
     font-size: 1.5em;
 }
 
-.item-detail-container{
-    width: 100%;
-    margin: 1em auto;
+.item-detail-card-rectangle,
+.item-detail-card-square{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 550px;
 }
 
-.item-detail-container > img{
+.item-detail-card-rectangle > img{
     width: 100%;
+    height: 50vw;
+    object-fit: cover;
 }
 
+.item-detail-card-square>img{
+    width: 100%;
+    height: auto;
+
+}
+
+
+.item-detail-text-container{
+    margin: 0 auto;
+}
 .name-price-container{
     margin: 0.5rem auto;
-    max-width: 400px;
     display: flex;
     justify-content: space-between;
+    font-size: 1.2em;
 }
 
 .name-price-container h3{
     margin-top:0px;
-    font-size: 1.2em;
 }
 
 .item-name{
     font-weight: 700;
-    font-size: 1.5em;
 }
 
 .item-price{
     font-weight: 600;
-    font-size: 1.6em;
 }
 
 .item-ingredient{
@@ -352,7 +363,7 @@ ul > li {
 section p{
     text-align: left;
     line-height: 1.5;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 .about-section-image-container{
@@ -421,11 +432,13 @@ iframe{
     max-height: 600px;
 }
 
-.notice-topping-container{
+.notice-topping-container, section>ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .notice-topping-container li{
     text-align: left;
@@ -436,10 +449,28 @@ iframe{
     max-width: 500px;
 }
 
+.centered{
+    text-align: center;
+}
+
+
+.set-meal-card-container{
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(1, minmax(170px, 1fr));
+    margin: 0 auto;
+}
+
+.what-is-teishoku-section img{
+    max-width: 700px;
+    width: 100%;
+}
+
 @media( max-width:599px){
     #root{
         font-size: 16px;
     }
+
 }
 
 
@@ -476,13 +507,34 @@ iframe{
         gap: 1em;
     }
 
+
     .menu-nav a{
         font-size: 1.5em;
     }
+
 }
 
-@media(min-width:760px){
+@media(min-width:700px){
+    .set-meal-card-container {
+        grid-template-columns: repeat(2, minmax(170px, 1fr));
+        gap:1em ;
+    }
+    .item-detail-card-rectangle>img {
+        height: 30vw;
+        object-fit: cover;
+    }
 
+    .item-detail-card-square>img{
+        object-fit: cover;
+        height: 70%;
+    }
+
+    .item-detail-container>img{
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+
+    }
 }
 
 
@@ -505,7 +557,7 @@ iframe{
 
     .name-price-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: 1.2em;
     }
 
@@ -527,4 +579,5 @@ iframe{
         max-width: 250px;
         padding: 2em 4em;
     }
+
 }

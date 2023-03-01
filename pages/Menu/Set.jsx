@@ -5,14 +5,10 @@ import { setMealData } from '../../data/menuData'
 export default function Set(){
 
 
-    const teishokuStyle ={
-        width:"100%",
-        borderRadius:"10px"
-    }
 
     const setMealEl = setMealData.map((item, index) => {
         return (
-          <div key={index} className="item-detail-container">
+          <div key={index} className="item-detail-card-rectangle">
             <img src={`${item.url}`} alt="" />
 
             <div className="item-detail-text-container">
@@ -20,11 +16,11 @@ export default function Set(){
                 <span className="item-name">{item.name}</span>
                 <span className="item-price">¥{item.price}</span>
               </div>
-              <p className="item-description">{item.description}</p>
+
+              <p className="item-ingredient">
+                Ingredients: <i>{item.ingredients}</i>
+              </p>
             </div>
-            <p className="item-ingredient">
-              Ingredients: <i>{item.ingredients}</i>
-            </p>
           </div>
         );
     })
@@ -35,17 +31,12 @@ export default function Set(){
 // 
 //   (Prices vary based on selections)
 
-    const paragraphStyle = {
-        paddingTop:"0.5em",
-        lineHeight:"1.5"
-    }   
-
     return (
       <>
-        <section>
+        <section className='what-is-teishoku-section'>
           <h3>What is Teishoku?</h3>
-          <img src="/images/menu/teishoku.png" style={teishokuStyle} alt="" />
-          <p>
+          <img src="/images/menu/teishoku.png" alt="" />
+          <p className="centered">
             <i>Teishoku</i> means "set meal" or "combo"
             <br />
           </p>
@@ -73,7 +64,7 @@ export default function Set(){
                 <li>White rice or chicken rice</li>
               </ul>
             </li>
-            <li style={paragraphStyle}>
+            <li>
               You can switch the size of your noodle and your rice bowl as long
               as it's
               <strong> one small </strong> + <strong>one regular</strong>)
@@ -81,7 +72,9 @@ export default function Set(){
           </ul>
         </section>
 
-        {setMealEl}
+        <section className='set-meal-card-container'>
+          {setMealEl}
+        </section>
       </>
     );
 }

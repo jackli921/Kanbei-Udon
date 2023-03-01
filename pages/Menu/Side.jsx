@@ -6,25 +6,26 @@ export default function Side() {
 
     const sideMenuEl = sideMenuData.map((item, index) => {
         return (
-        <div key={index} className="item-detail-container">
+        <div key={index} className="item-detail-card-square">
             <img src={`${item.url}`} alt="" />
 
             <div className="item-detail-text-container">
-            <div className="name-price-container">
-                <span className="item-name">{item.name}</span>
-                <span className="item-price">¥{item.price}</span>
-            </div>
-            <p className="item-ingredient">
-                Ingredients: <i>{item.ingredients}</i>
-            </p>
+              <div className="name-price-container">
+                  <span className="item-name">{item.name}</span>
+                  <span className="item-price">¥{item.price}</span>
+              </div>
+              <p className="item-ingredient">
+                  Ingredients: <i>{item.ingredients}</i>
+              </p>
             </div>
         </div>
         );
-    });
+     });
 
   return (
-    <>
-      {sideMenuEl}
-    </>
+       <section className="set-meal-card-container">
+            {sideMenuEl}
+        </section>
+      
   );
 }
