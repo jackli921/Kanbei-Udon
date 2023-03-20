@@ -16,14 +16,14 @@ export default function Header(){
             <span>Menu</span>
           </NavLink>
 
-          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/about">
-            <img src="/images/about.svg" alt="icon of an info icon" />
-            <span>About</span>
+          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/history">
+            <img src="/images/history.svg" alt="icon of an info icon" />
+            <span>History</span>
           </NavLink>
 
-          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/access">
-            <img src="/images/access.svg" alt="icon of a location pin" />
-            <span>Access</span>
+          <NavLink className={({isActive})=> isActive? "active-link" : ""}to="/location">
+            <img src="/images/location.svg" alt="icon of a location pin" />
+            <span>Location</span>
           </NavLink>
         </nav>
       </header>

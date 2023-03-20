@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import History from "./pages/History";
 import Menu from "./pages/Menu";
-import Access from "./pages/Access";
+import Location from "./pages/Location";
 import ItemDetails from "./pages/ItemDetails";
 
 import Layout from './components/Layout'
@@ -63,8 +63,8 @@ window.addEventListener('scroll', fixNav)
             <Route path="side" element={<Side />} />
           </Route>
 
-          <Route path="/about" element={<About />} />
-          <Route path="/access" element={<Access />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/location" element={<Location />} />
           <Route path="/menu/:id" element={<ItemDetails />} />
         </Route>
       </Routes>

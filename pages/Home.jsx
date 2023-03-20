@@ -60,7 +60,7 @@ export default function Home() {
           Serving hearty meal to the Kasuya community since Showa 52 (1977)
         </p>
 
-        <Link to="/about" className="button-primary">
+        <Link to="/history" className="button-primary">
           <span>About Kanbei Udon</span>
         </Link>
       </section>
