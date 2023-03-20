@@ -406,7 +406,9 @@ section p{
 
 .timeline-event-container > img{
     width: 100%;
+    margin: 0.5em 0;
 }
+
 
 .timeline-section{
     font-size: 1.3em;
@@ -450,9 +452,19 @@ section p{
     color: red;
 }
 
-iframe{
-    max-width: 600px;
-    max-height: 600px;
+.map-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .notice-topping-container, section>ul{

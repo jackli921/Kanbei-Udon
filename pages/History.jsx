@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <main className="main">
-      <section className="video">
+      <section className="video about-section">
         <h1> The Story of Kanbei Udon </h1>
         <iframe
           width="100%"
@@ -71,8 +71,8 @@ export default function About() {
       </section>
       <hr />
 
-      <section className="about-section timeline-section">
-        <h1>Kanbei Udon's Timeline</h1>
+      <section className="timeline-section">
+        <h2>Kanbei Udon's Timeline</h2>
 
         <div className="timeline-event-container">
           <img src="/images/about/about-6.png" alt="" />
