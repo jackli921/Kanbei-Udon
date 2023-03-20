@@ -5,6 +5,20 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <main className="main">
+      <section className="video">
+        <h1> The Story of Kanbei Udon Shop</h1>
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/NvYKmCvHW7g"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <hr />
       <h1> Where It All Began</h1>
 
       <section className="about-section">
@@ -59,29 +73,41 @@ export default function About() {
       </section>
       <hr />
 
-
-
       <section className="about-section timeline-section">
         <h1>Kanbei Udon's Timeline</h1>
-        <img src="/images/about/about-6.png" alt="" />
-
-        <span>First Opened in 1977</span>
 
         <div className="timeline-event-container">
-          <h3>Major Event</h3>
-          <h3>19xx</h3>
+          <img src="/images/about/about-6.png" alt="" />
+          <span>1977 - Kanbei Udon opens </span>
         </div>
+
         <div className="timeline-event-container">
-          <h3>Major Event</h3>
-          <h3>19xx</h3>
+          <span>1981 - The first store renovation</span>
         </div>
+
         <div className="timeline-event-container">
-          <h3>Major Event</h3>
-          <h3>19xx</h3>
+          <span>
+            1982 - Mr.Ogawa attends Self-Development "DMP" training at the
+            Toyomura Institute
+          </span>
         </div>
+
         <div className="timeline-event-container">
-          <h3>Major Event</h3>
-          <h3>19xx</h3>
+          <span>2005 - Store remodeling by Kyushu University students</span>
+        </div>
+
+        <div className="timeline-event-container">
+          <span>2008 - Rob from the U.S. joins Kanbei Udon</span>
+        </div>
+
+        <div className="timeline-event-container">
+          <span>
+            2009 - begin serving "black udon", udon noodles with bamboo charcoal
+          </span>
+        </div>
+
+        <div className="timeline-event-container">
+          <span>2022 - Yuichi from Bolivia joins Kanbei Udon</span>
         </div>
       </section>
     </main>

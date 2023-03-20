@@ -400,16 +400,23 @@ section p{
 }
 
 
-.timeline-event-container{
-    display: flex;
-    justify-content: space-between;
-    margin: 1em 10%;
+.timeline-event-container {
+    margin: 1em auto;
 }
 
-.timeline-section span{
-    font-size: 1.3em;
-    font-weight: 600;
+.timeline-event-container > img{
+    width: 100%;
 }
+
+.timeline-section{
+    font-size: 1.3em;
+}
+
+.video{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
 
 .access-info-container{
     margin: 0 10%;
