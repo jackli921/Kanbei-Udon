@@ -6,7 +6,7 @@ export default function About() {
   return (
     <main className="main">
       <section className="video">
-        <h1> The Story of Kanbei Udon Shop</h1>
+        <h1> The Story of Kanbei Udon </h1>
         <iframe
           width="100%"
           height="100%"
