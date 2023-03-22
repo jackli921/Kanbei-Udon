@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <main className="main">
       <section className="landing-page-section">
-        <span className="shop-name">Kanbei Udon</span>
+        <span className="shop-name-in-main shop-name">Kanbei Udon</span>
         <p className="tagline-primary upper">
           A beloved udon shop along the streets of Kasuya, Fukuoka
         </p>
