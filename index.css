@@ -239,7 +239,7 @@ p > i{
     width: 100%;
     height: 80%;
     object-fit: cover;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .item-detail-card-rectangle,
@@ -274,11 +274,16 @@ p > i{
     gap:1em;
 }
 
+.item-detail-flex-container img{
+    max-width: 500px;
+    width: 100%;
+}
+
 .name-price-container{
     margin: 0.5rem auto;
     display: flex;
     justify-content: space-between;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .name-price-container h3{
@@ -648,6 +653,10 @@ section p{
         object-fit: cover;
 
     } */
+
+    .item-detail-container{
+        min-height: 70vh;
+    }
 }
 
 
@@ -674,6 +683,24 @@ section p{
     }
     .access-info-container{
         margin: 1em auto;
+    }   
+
+
+    .item-detail-container{
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .item-detail-flex-container{
+        display: flex;
+        gap: 1em;
+    }
+
+    .item-detail-text-container{
+        max-width: 500px;
     }
 
 
@@ -683,10 +710,9 @@ section p{
 
     :root{
         --text-base-size:1em;
-        --text-scale-ratio:1.25;
+        --text-scale-ratio:1.22;
     }
 
-    
     .menu-nav{
         display: flex;
         margin: 1em auto;
@@ -719,13 +745,24 @@ section p{
         align-items: center;
     }
 
-}
 
-
-@media(min-width:1200px){
     .popular-dish-grid {
-            grid-template-columns: repeat(3, minmax(170px, 1fr));
-            gap: 1em;
-        }
+        grid-template-columns: repeat(3, minmax(170px, 1fr));
+        gap: 1em;
+    }
 
+    .notice-container{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .notice-topping-container{
+        align-items: flex-start;
+    }
+
+
+    .main{
+        min-height: 80vh;
+    }
 }

@@ -8,10 +8,10 @@ import ScrollToTop from './ScrollToTop'
 export default function Layout(){
     return (
       <>
-        <div>
+        <>
           <Header />
           <Outlet />
-        </div>
+        </>
         <Footer />
         <ScrollToTop />
       </>

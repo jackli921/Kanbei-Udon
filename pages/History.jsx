@@ -71,7 +71,7 @@ export default function About() {
       </section>
       <hr />
 
-      <section className="timeline-section">
+      <section className="timeline-section about-section">
         <h2>Kanbei Udon's Timeline</h2>
 
         <div className="timeline-event-container">
