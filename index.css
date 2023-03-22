@@ -245,7 +245,7 @@ p > i{
 .item-detail-card-rectangle,
 .item-detail-card-square{
     width: 90%;
-    margin: 0 auto;
+    margin: 1em auto;
     max-width: 550px;
 }
 
@@ -280,7 +280,7 @@ p > i{
 }
 
 .name-price-container{
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 0 auto;
     display: flex;
     justify-content: space-between;
     max-width: 500px;
@@ -291,17 +291,19 @@ p > i{
 }
 
 .item-name{
-    font-weight: 700;
+    margin-bottom: 0.2em;
 }
 
 .item-price{
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .item-ingredient{
     text-align: left;
     line-height: 1.5;
     font-weight: 500;
+    margin-top: 0;
 }
 
 .item-description{
@@ -415,11 +417,11 @@ ul > li {
     margin: 3em auto;
 }
 
-section p{
+/* section p{
     text-align: left;
     line-height: 1.5;
     margin: 1em auto;
-}
+} */
 
 .about-section-image-container{
     display: flex;

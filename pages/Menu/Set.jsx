@@ -13,8 +13,8 @@ export default function Set(){
 
             <div className="item-detail-text-container">
               <div className="name-price-container">
-                <span className="item-name">{item.name}</span>
-                <span className="item-price">¥{item.price}</span>
+                <h3 className="item-name">{item.name}</h3>
+                <h3 className="item-price">¥{item.price}</h3>
               </div>
 
               <p className="item-ingredient">
