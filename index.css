@@ -8,14 +8,25 @@
 
 }
 
-html, body {
+:root{
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: serif;
+
+    /* set base values */
+    --text-base-size:1em;
+    --text-scale-ratio:1.2;
+}
+
+
+
+body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
     text-align: center;
     min-width: 375px;
     background-color: #e5e0dc;
-    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
     height: 100%;
 }
 
