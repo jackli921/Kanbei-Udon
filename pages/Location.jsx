@@ -20,7 +20,7 @@ export default function Location() {
 
       </section>
 
-      <div className="access-info-container">
+      <div className="location-info-container">
         <div className="access-line-container">
           <img src="images/access/pin-icon.svg" alt="" />
           <h4>1-12-15 Chojabaruhigashi, Kasuya, Fukuoka, 811-2317</h4>

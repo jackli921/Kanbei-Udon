@@ -11,13 +11,21 @@
 :root{
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: serif;
+    --font-logo: 'Cintaly';
 
     /* set base values */
     --text-base-size:1em;
     --text-scale-ratio:1.2;
+
+    /* type scale */
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio))
 }
-
-
 
 body {
     margin: 0;
@@ -73,7 +81,7 @@ a {
 }
 
 a > span{
-    font-size: 1.2em;
+    font-size: var(--text-md);
     margin:0.2em 0 0 0
 }
 
@@ -126,15 +134,16 @@ section{
 }
 
 .shop-name{
-    font-family: 'Cintaly', sans-serif;
-    font-size: 3.6em;
-    margin: 1rem 0 0 0;
+    font-family: var(--font-logo), sans-serif;
+    font-size: var(--text-xxxl);
+    margin: 0.5rem 0;
+    display: block;
 }
 
 .tagline-primary{
     width: 95%;
     text-align:center;
-    font-size: 1.2em;
+    font-size: var(--text-md);
     margin: 1rem auto;
     line-height: 1.5;
 }
@@ -151,6 +160,7 @@ section{
 }
 
 .button-primary{
+    font-size: var(--text-md);
     display: block;
     width: 100%;
     max-width: 680px;
@@ -210,11 +220,6 @@ p > i{
     max-width: 400px;
 }
 
-.popular-dish-card > h3 {
-    margin: 0.5em auto;
-    font-size: 1.5em;
-}
-
 .item-detail-card-rectangle,
 .item-detail-card-square{
     width: 90%;
@@ -250,7 +255,7 @@ p > i{
     margin: 0.5rem auto;
     display: flex;
     justify-content: space-between;
-    font-size: 1.2em;
+    font-size: var(--text-md);
     max-width: 400px;
 }
 
@@ -296,7 +301,7 @@ p > i{
     max-height: 120px;
     background-color: #a6a6a6;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: var(--text-lg);
     letter-spacing: 1.3;  
     display: flex;
     justify-content: center;
@@ -328,7 +333,7 @@ footer{
     width: 100%;
     height: 5rem;
     gap: 0.7em;
-    font-size: 1.3em;
+    font-size: var(--text-lg);
     background-color: #a6a6a6;
 }
 
@@ -340,7 +345,7 @@ footer{
 }
 
 footer > p{
-    font-family: Cintaly;
+    font-family: var(--font-logo);
 }
 
 footer>p>span{
@@ -422,7 +427,7 @@ section p{
 
 
 .timeline-section{
-    font-size: 1.3em;
+    font-size: var(--text-md);
 }
 
 .video{
@@ -430,15 +435,18 @@ section p{
     width: 100%;
 }
 
+.main h1{
+    font-size: var(--text-xl);
+}
 
-.access-info-container{
+.location-info-container{
     margin: 0 10%;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2em;
+    font-size: var(--text-md);
 }
 
 .access-line-container{
@@ -510,13 +518,6 @@ section p{
 .what-is-teishoku-section img{
     max-width: 700px;
     width: 100%;
-}
-
-@media( max-width:599px){
-    #root{
-        font-size: 16px;
-    }
-
 }
 
 
