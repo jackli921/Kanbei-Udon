@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Location() {
   return (
     <main className="main">
-      <h1>Where is Kanbe Udon?</h1>
+      <h1>Where is Kanbei Udon?</h1>
 
       <section className="map-responsive">
         
