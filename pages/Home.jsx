@@ -10,7 +10,7 @@ export default function Home() {
     return (
       <div key={index} className="specialty-card">
         <img src={`${url}`} alt="" />
-        <div>
+        <div className="specialty-card-text-container">
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
@@ -69,7 +69,12 @@ export default function Home() {
 
       <section className="specialty-section">
         <h1>Our Specialty</h1>
-        {specialityHTML}
+      <div className="specialty-card-container">
+            {specialityHTML}
+      </div>
+
+        
+        
         <p className="tagline-secondary">
           The dashi stock we use are made <strong>from scratch </strong>each
           morning <strong>without any chemical additives</strong>.

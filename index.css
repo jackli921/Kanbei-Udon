@@ -363,6 +363,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 100%;
 }
 
 footer > p{
@@ -528,7 +529,6 @@ section p{
     text-align: center;
 }
 
-
 .set-meal-card-container{
     display: grid;
     max-width: 1000px;
@@ -545,36 +545,35 @@ section p{
 @media(min-width:500px) {
 
     .specialty-card {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 1em;
-            text-align: left;
-            margin: 1em auto;
-            line-height: 1.4;
-    
-        }
-    
-        .specialty-card img {
-            width: 40%;
-            height: auto;
-            min-width: 120px;
-        }
-    
-        .specialty-card * {
-            flex: 1;
-        }
-    
-        .specialty-card>div>h3 {
-            margin-top: 0;
-            margin-bottom: 0.4rem;
-        }
-    
-        .specialty-card>div>p {
-            max-width: 90%;
-            min-width: 200px;
-            text-align: left;
-        }
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1em;
+        text-align: left;
+        margin: 1em auto;
+        line-height: 1.4;
+    }
+
+    .specialty-card img {
+        width: 40%;
+        height: auto;
+        min-width: 120px;
+    }
+
+    .specialty-card * {
+        flex: 1;
+    }
+
+    .specialty-card>div>h3 {
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+    }
+
+    .specialty-card>div>p {
+        max-width: 90%;
+        min-width: 200px;
+        text-align: left;
+    }
 
     .landing-page-images-grid{
         gap: 1em;
@@ -622,13 +621,17 @@ section p{
 }
 
 @media(min-width:650px){
-    #root {
-            font-size: 18px;
-        }
+    
+    :root{
+        --text-base-size: 1.1em;
+        --text-scale-ratio: 1.2;
+    }
+
     .set-meal-card-container {
         grid-template-columns: repeat(2, minmax(170px, 1fr));
         gap:1em ;
     }
+
     .item-detail-card-rectangle>img {
         height: 30vw;
         object-fit: cover;
@@ -639,12 +642,12 @@ section p{
         height: 70%;
     }
 
-    .item-detail-container>img{
+    /* .item-detail-container>img{
         width: 100%;
         height: 40vw;
         object-fit: cover;
 
-    }
+    } */
 }
 
 
@@ -668,7 +671,6 @@ section p{
     .name-price-container{
         display: flex;
         justify-content: space-between;
-        font-size: 1.2em;
     }
     .access-info-container{
         margin: 1em auto;
@@ -679,9 +681,12 @@ section p{
 
 @media(min-width:1000px){
 
-    #root{
-        font-size: 20px;
+    :root{
+        --text-base-size:1em;
+        --text-scale-ratio:1.25;
     }
+
+    
     .menu-nav{
         display: flex;
         margin: 1em auto;
@@ -692,6 +697,28 @@ section p{
         max-width: 250px;
         padding: 2em 4em;
     }
+
+    .specialty-card-container{
+        display: flex;
+        
+        gap: 1em;
+    }
+    
+    .specialty-card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specialty-card img{
+        width: 100%;
+    }
+
+    .specialty-card-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 
@@ -701,7 +728,4 @@ section p{
             gap: 1em;
         }
 
-    .popular-dish-grid img{
-        
-    }
 }
