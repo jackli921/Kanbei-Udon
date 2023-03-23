@@ -26,9 +26,14 @@
     --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
     --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
 
-    /* text size */
+    /* line-height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+
 }
 
+
+        /* text size */
 .text--xxxl {
     font-size: var(--text-xxxl)
 }
@@ -153,8 +158,6 @@ section{
     object-position: center;
     grid-column: 1/2;
     grid-row: 1/2;
-    max-width: 100%;
-    height: 100%;
 
 }
 
