@@ -149,21 +149,21 @@ section{
 }
 
 .landing-page-images-grid img{
-    max-width: 100%;
+    width: 100%;
     height:auto;
+ 
 }
 
 .landing-page-images-grid img:nth-child(1){
-    object-fit: cover;
-    object-position: center;
     grid-column: 1/2;
     grid-row: 1/2;
-
+    max-height: 400px;
 }
 
 .landing-page-images-grid img:nth-child(2){
     grid-column: 2/3;
     grid-row: 1/2;
+    max-height: 400px;
 }
 
 .landing-page-images-grid img:nth-child(3){
