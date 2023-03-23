@@ -125,7 +125,7 @@ a > span{
     margin:0.2em 0 0 0
 }
 
-main{
+.main{
     margin: 0 1em;
 }
 
@@ -157,6 +157,7 @@ section{
 .landing-page-images-grid img:nth-child(1){
     grid-column: 1/2;
     grid-row: 1/2;
+    height: 100%;
     max-height: 400px;
 }
 
@@ -240,9 +241,9 @@ p > i{
 
 .popular-dish-card> img {
     width: 100%;
-    height: 80%;
     object-fit: cover;
     max-width: 500px;
+    max-height: 500px;
 }
 
 .item-detail-card-rectangle,
@@ -569,7 +570,6 @@ ul > li {
     }
 
     .specialty-card img {
-        width: 40%;
         height: auto;
         min-width: 120px;
     }
@@ -677,12 +677,12 @@ ul > li {
     .specialty-card{
         justify-content: center;
     }
-    .specialty-card > img{
+    /* .specialty-card > img{
         max-width: 350px;
-    }
+    } */
 
     .specialty-card > div {
-        max-width: 350px;
+        max-width: 500px;
         margin: 0;
     }
 
@@ -735,26 +735,25 @@ ul > li {
     }
 
     .specialty-card-container{
-        display: flex;
-        
-        gap: 1em;
+        display: flex;        
+        gap: clamp(2em, 2vw + 1em, 10em);
+        max-width: 2000px;
+        justify-content: center;
+        margin: 0 auto;
     }
     
     .specialty-card{
         flex-direction: column;
         align-items: center;
+    
     }
-
-    .specialty-card img{
-        width: 100%;
-    }
+    
 
     .specialty-card-text-container{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
 
     .popular-dish-grid {
         grid-template-columns: repeat(3, minmax(170px, 1fr));
@@ -801,4 +800,12 @@ ul > li {
     .shop-name-in-main{
         display: none;
     }
+}
+
+@media(min-width:1500px){
+
+    .specialty-card img {
+            min-width: 420px;
+        }
+
 }
