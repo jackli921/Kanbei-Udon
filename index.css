@@ -470,6 +470,8 @@ ul > li {
 .video{
     aspect-ratio: 16 / 9;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .main h1{
@@ -513,6 +515,7 @@ ul > li {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    margin: 0 auto;
 }
 
 .map-responsive iframe {
@@ -520,6 +523,7 @@ ul > li {
     top: 0;
     height: 100%;
     width: 100%;
+    max-width: 1200px;
     position: absolute;
 }
 
@@ -757,7 +761,8 @@ ul > li {
 
     .popular-dish-grid {
         grid-template-columns: repeat(3, minmax(170px, 1fr));
-        gap: 1em;
+        gap: clamp(2em, 2vw + 1em, 10em);
+        max-width: 2000px;
     }
 
     .notice-container{
